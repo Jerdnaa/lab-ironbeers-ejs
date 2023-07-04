@@ -1,0 +1,11 @@
+<% data.forEach(beer => {%>
+<%- beer.name %>
+<br>
+<a href="/beers/beer-<%- beer.id %>"><img src="<%- beer.image_url %>" alt="bere" style="height: 70px"></a>
+<br>
+<%- beer.description %>
+<br>
+<% beer.tagline %>
+<br>
+
+<% }); %>
